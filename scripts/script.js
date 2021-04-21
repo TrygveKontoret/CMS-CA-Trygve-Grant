@@ -10,7 +10,7 @@ productsAll = (products) => {
             for (image of product.images) {
                 newProduct += `
                 <div>
-                <a href="/product.html?id=${product.id}"><img src="${image.src}"></a>
+                <a href="/product.html?id=${product.id}"><img src="${image.thumbnail}"></a>
                 <h3>${product.name}</h3>
                 <p>£${product.prices.price}</p>
                 <a href="/product.html?id=${product.id}">
