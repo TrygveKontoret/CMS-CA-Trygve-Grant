@@ -14,7 +14,7 @@ flower = (productPage) => {
         <h2>${productPage.name}</h2>
         <img><img src="${image.src}"></img>
         <p>${productPage.description}</p>
-        <p>£${productPage.prices.price}</p>
+        <p>${productPage.prices.currency_symbol}${productPage.prices.price}</p>
     </div>`;
     out.innerHTML += products;
     }

@@ -12,7 +12,7 @@ productsAll = (products) => {
                 <div>
                 <a href="/product.html?id=${product.id}"><img src="${image.thumbnail}"></a>
                 <h3>${product.name}</h3>
-                <p>£${product.prices.price}</p>
+                <p>${product.prices.currency_symbol}${product.prices.price}</p>
                 <a href="/product.html?id=${product.id}">
                 <button>View</button>
                 </a>
